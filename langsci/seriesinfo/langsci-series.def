@@ -22,6 +22,7 @@
 \newcommand{\osl}{osl}		%Open Slavic Linguistics
 \newcommand{\pmwe}{pmwe}		%Phraseology and Multi-Word Expressions
 \newcommand{\sidl}{sidl}
+\newcommand{\scl}{scl}
 \newcommand{\silp}{silp}	%Studies in Laboratory Phonology
 \newcommand{\tbls}{tbls}	%Textbooks in Language Sciences
 \newcommand{\tgdi}{tgdi}	%Topics at the  Grammar-Discourse Interface
