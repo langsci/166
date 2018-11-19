@@ -625,38 +625,36 @@
          y="172.1817"
          id="tspan4812" /></text>
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="1223.4747"
-     y="54.907162"
-     id="text4828"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan4830"
-       x="1223.4747"
+  <g
+     id="g3484">
+    <text
+       sodipodi:linespacing="125%"
+       id="text4828"
        y="54.907162"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Spain</tspan><tspan
-       sodipodi:role="line"
        x="1223.4747"
-       y="117.40717"
-       id="tspan4832"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">England</tspan><tspan
-       sodipodi:role="line"
-       x="1223.4747"
-       y="179.90717"
-       id="tspan4834"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Netherlands</tspan><tspan
-       sodipodi:role="line"
-       x="1223.4747"
-       y="242.40717"
-       id="tspan4836"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">France</tspan><tspan
-       sodipodi:role="line"
-       x="1223.4747"
-       y="304.90717"
-       id="tspan4838"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Denmark</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         y="54.907162"
+         x="1223.4747"
+         id="tspan4830"
+         sodipodi:role="line">Spain</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="tspan4832"
+         y="117.40717"
+         x="1223.4747"
+         sodipodi:role="line">England</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="tspan4834"
+         y="179.90717"
+         x="1223.4747"
+         sodipodi:role="line">Netherlands</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Linux Libertine O';-inkscape-font-specification:'Linux Libertine O, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="tspan4838"
+         y="242.40717"
+         x="1223.4747"
+         sodipodi:role="line">France</tspan></text>
+  </g>
   <rect
      ry="5.4376302"
      y="84.449638"
@@ -689,14 +687,6 @@
      width="47.745358"
      id="rect4852"
      style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#80f0ef;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter-blend-mode:normal;filter-gaussianBlur-deviation:0" />
-  <rect
-     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#873aec;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter-blend-mode:normal;filter-gaussianBlur-deviation:0"
-     id="rect4842"
-     width="47.745358"
-     height="47.745358"
-     x="1161.4058"
-     y="269.76126"
-     ry="5.4376302" />
   <path
      style="fill:#80f0ef;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;filter-blend-mode:normal;filter-gaussianBlur-deviation:0;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
      d="m 1240.6892,420.2524 7.8519,-0.0746 0.7087,-4.94239 -8.4673,5.1662"
