@@ -33,21 +33,24 @@ EndOfClause	10			10	7
     ybar stacked,   
     xmin=0,        
     xtick=data,     % Use as many tick labels as y coordinates
-    width=14cm,  
+    width=11cm,  
     height=6cm,
+    axis x line=bottom,
+    axis y line=left,
     bar width=0.6cm,
-    enlarge x limits=0.25,
+    enlarge x limits=0.1,
 %     legend style={at={(axis cs:65,0.2)},anchor=south west},
     xticklabels from table={\testdata}{Label},  % Get the labels from the Label column of the \datatable
     tick label style={font=\scriptsize},
     xticklabel style={rotate=20},
+    reverse legend,
 ]
-    \addplot [fill=lsDarkBlue]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
+    \addplot [fill=lsDarkBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
     \addplot [fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
-    \addplot [fill=lsNightBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [fill=lsLightBlue]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
             
 %             AfterNPlsMidGreen,MidVP,EndOfClause
-    \legend{SinglewordAdverb,PrepP,AdvP}
+    \legend{Adverb Phrase,Prepostional Phrase,Single-word Adverb}
 
     \end{axis}
     \end{tikzpicture}
