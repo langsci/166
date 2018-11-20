@@ -21,11 +21,71 @@ Negation can be marked in a variety of ways in Ship English, the most common of 
   
 \begin{figure}
 
-%%[Warning: Draw object ignored]
+\begin{tabular}{ll}
+\lsptoprule
+Marker & No.\\
+\midrule 
+Not & 104\\
+Never&42\\
+No&25\\
+Nor& 17\\
+Nothing&8\\
+Neither&3\\
+No one&3\\
+Prefix <un> & 2\\
+\midrule
+& 204\\
+\lspbottomrule
+\end{tabular}
 
-\caption{\label{fig:key:6.1}: Distribution of negation markers used in a sample of 204 verb phrases\textsuperscript{a} }
+% \pgfplotscreateplotcyclelist{langscicolors}{%
+% lsDarkBlue,fill=lsDarkBlue\\%
+% lsMidBlue,fill=lsMidBlue\\%
+% lsNightBlue,fill=lsNightBlue\\%
+% lsMidDarkBlue,fill=lsMidDarkBlue\\%
+% lsLightBlue,fill=lsLightBlue\\%
+% lsDarkGreenTwo,fill=lsDarkGreenTwo\\%
+% lsRichGreen!60!gray,fill=lsRichGreen\\%
+% lsLightGreen,fill=lsLightGreen\\%
+% lsMidGreen,fill=lsMidGreen\\%
+% }
+ 
 
-\textsuperscript{a} Sources: 1045.f.3/1, 445f.1, AC WO 16-16/8-16, ADM 51/4322, 3983, 3954, ADM 52/1, 2, BL/74/816/m/11/36, CO 5/1411, DDB6 8/4, HCA 1/9, HCA 1/11,12,13,14, HCA 1/52, HCA 1/98, 99, 101, Palmer (1986]. SP 42/6, T/70/1215.
+\begin{tikzpicture}
+  [
+      pie chart,
+      slice type={Not}{lsDarkBlue},
+      slice type={Never}{lsMidBlue},
+      slice type={No}{lsMidDarkBlue},
+      slice type={Nor}{lsLightBlue},
+      slice type={Nothing}{lsDarkGreenTwo},
+      slice type={Neither}{lsRichGreen},
+      slice type={Noone}{lsLightGreen},
+      slice type={un}{lsMidGreen},
+      scale=4
+  ]
+  \pie{}{51/Not,
+	21/Never,
+	12/No,
+	8/Nor,
+	4/Nothing,
+	2/Neither,
+	1/Noone,
+	1/un}  
+  \legend[shift={(1.5cm,17mm)}]{{Not (104)}/Not, 
+			    {Never (42)}/Never,
+			    {No (25)}/No,
+			    {Nor (17) }/Nor,
+			    {Nothing (8)}/Nothing,
+			    {Neither (3)}/Neither,
+			    {No one (3)}/Noone,
+			    {Prefix \textit{un-} (2)}/un}
+\end{tikzpicture}
+ 
+\caption{\label{fig:key:6.1}: Distribution of negation markers used in a sample of 204 verb phrases\\
+{\tiny Sources: 1045.f.3/1, 445f.1, AC WO 16-16/8-16, ADM 51/4322, 3983, 3954, ADM 52/1, 2, BL/74/816/m/11/36, CO 5/1411, DDB6 8/4, HCA 1/9, HCA 1/11,12,13,14, HCA 1/52, HCA 1/98, 99, 101, Palmer (1986]. SP 42/6, T/70/1215.}
+}
+\todo[inline]{fix legend}
 \end{figure}
 
 
@@ -89,24 +149,31 @@ The \isi{verb} “to be” features most predominantly in \isi{past tense} and �
 
 \begin{table}
 \caption{\label{tab:key:6.1} Examples of the preterit “was” used for with first, second, and third person nouns and pronouns, both singular and plural}
+\small 
 \begin{tabularx}{\textwidth}{llQQ} 
 \lsptoprule
-&  & \textbf{Singular} & \textbf{Plural}\\
+person &  & \textbf{Singular} & \textbf{Plural}\\
 \midrule
- \textbf{1\textsuperscript{st}} \textbf{person} & \textbf{Noun} \textbf{Phrase} & N/A\textsuperscript{a} & “My Self and the rest of the Company under my command \textit{was} entered and Musterd on board” [ADM 51/4170/2]\\
-& \textbf{Pronoun} & I \textit{was} told, no other Trees fit to build with” [1045.f.3/1/27] & “then he made [out] what we \textit{was}” [ADM 52/1/1]\\
-
+ \textbf{1\textsuperscript{st}}  & \textbf{Noun phrase} & n/a\textsuperscript{a} & “My Self and the rest of the Company under my command \textit{was} entered and Musterd on board” [ADM 51/4170/2]\\
 \tablevspace
- \textbf{2\textsuperscript{nd}} \textbf{person} & \textbf{Noun} \textbf{Phrase} & N/A\textsuperscript{a} & “you also John Jessop \textit{was} lately wicked” [HCA 1/99/170,]\\
-& \textbf{Pronoun} & “it may be you \textit{was} not willing at the first” [CO 5/1411/42] & “\textit{was} you [reffering to John Houghling, Corneluis Franc and Francois Delaune] on board the pyrate shipp when she was taken” [CO 5/1411/28] \\
+& \textbf{Pronoun} & “I \textit{was} told, no other Trees fit to build with” [1045.f.3/1/27] & “then he made [out] what we \textit{was}” [ADM 52/1/1]\\
 
+\midrule
+ \textbf{2\textsuperscript{nd}}  & \textbf{Noun phrase} & n/a\textsuperscript{a} & “you also John Jessop \textit{was} lately wicked” [HCA 1/99/170,]\\
 \tablevspace
- \textbf{3\textsuperscript{rd}} \textbf{person} & \textbf{Noun} \textbf{Phrase} & “the \isi{prisoner} \textit{was} belonging to Augustino’s \isi{crew}” [HCA 1/99/7] & “those goods \textit{was} to ship” [HCA 1/98/43] \\
+& \textbf{Pronoun} & “it may be you \textit{was} not willing at the first” [CO 5/1411/42] & “\textit{was} you [\biberror{reffering} to John Houghling, Corneluis Franc and Francois Delaune] on board the pyrate shipp when she was taken” [CO 5/1411/28] \\
+
+\midrule 
+ \textbf{3\textsuperscript{rd}}  & \textbf{Noun phrase} & “the \isi{prisoner} \textit{was} belonging to Augustino’s \isi{crew}” [HCA 1/99/7] & “those goods \textit{was} to ship” [HCA 1/98/43] \\
+\tablevspace
 & \textbf{Pronoun} & “after he \textit{was} come on board” [CO 5/1411/99] & “where they \textit{was} carried” [HCA 1/101/220]\\
 
 \lspbottomrule
 \end{tabularx}
-\textsuperscript{a} Not applicable as reference to self (first person) or addressee (second person) using a \isi{noun phrase} renders it \isi{third person}. 
+\parbox{\textwidth}{\footnotesize
+\textsuperscript{a}Not applicable as reference to self (first person) or addressee (second person) using a \isi{noun phrase} renders it \isi{third person}.
+}
+
 \end{table}
 
 In terms of \isi{linguistic conditioning}, the most salient use of the \isi{preterit} form “was” appeared in \isi{third person} \isi{plural} contexts with a \isi{noun phrase} (emphasized in bold,) and most examples of these were to be found in witness depositions, e.g., “\textbf{those} \textbf{men}...that \textit{was}n't immediately on board” [ADM 106/300/25], “they met with \textbf{two} \textbf{ships} which \textit{was} pirates” [HCA 1/98/47], “there \textit{was} \textbf{three} at first” [HCA 1/99/8], “about \textbf{tew} \textbf{of} \textbf{them} \textit{was} gone” [HCA 1/99/126], “Four to one \textit{was} \textbf{odds}” [HCA 1/9/155], and “to confes, where \textbf{their} \textbf{moneys} \textit{was}” [HCA 1/9/18]. Although various examples of \isi{third person} \isi{plural} \isi{noun} phrases used with “was” appear, very few trends of usage suggest any type of internal \isi{linguistic conditioning} that selected the \isi{preterit} form “was” over the alternative variant “were.”  One potential conditioning factor was the use of a compound \isi{noun phrase} as a subject that is formed with a conjunction (\isi{noun phrase} emphasized in bold,) e.g., “\textbf{8} \textbf{sayle} \textbf{of} \textbf{English} \textbf{\&}  \textbf{Dutch} \textit{was} drawn out” [ADM 52/2/5], “Where \textbf{his} \textbf{money} \textbf{\&}  \textbf{Gold} \textit{was}” [HCA 1/9/18], “\textbf{my} \textbf{Ledger} \textbf{and} \textbf{hauwl} \textit{was} carried a shore” [ADM 51/3954], “\textbf{hee} \textbf{and} \textbf{Captaine} \textbf{Thomas} \textbf{Garnett} \textit{was} taken” [HCA 1/9/67], “\textbf{the} \textbf{country} \textbf{and} \textbf{his} \textbf{colonies} \textit{was} not under his command” [CO 5/1411/101], and “\textbf{Nutmeggs} \textbf{or} \textbf{Cloves} that \textit{was} given away” [HCA 1/12/78]. Yet there is no evidence to suggest that the \isi{plural} or singular nature of either constituent in the conjoined \isi{noun} phrases affects the choice of \isi{copula} \isi{preterit} as either “was” or “were” and this may signify that the use of the conjunction itself selected the use of “was” rather than the composition of the conjoined \isi{noun phrase}. Another potential conditioning factor may have been the use of a first person \isi{plural} \isi{pronoun} subject “we” as the subject of the clause in which “was” forms the main \isi{verb} of the predicate, particularly when directly preceding the \isi{copula} e.g., “\textbf{wee} \textit{was} forced soe neare the shoare” [HCA 1/12/2], “\textbf{we} \textit{was} forsed to Stand to the Westward” [ADM 52/1/1], “masking what \textbf{we} \textit{was}” [ADM 52/1/1], and “agreeable to you as \textbf{we} \textit{was} then got out” [D/Earle/3/1]. The salience of this usage is also highlighted by its inclusion in published sea-songs of the \isi{seventeenth century}, e.g., “As \textbf{we} \textit{was} sailing on the main...we was in danger” (cited in \citealt{Palmer1986}: 51). Yet, despite these two potential conditioning factors for selecting “was” rather than the \isi{preterit} form “were,” the frequency and range of variation in the \isi{corpus} suggests either \isi{free variation} or a general tendency to select “was” in all contexts rather than complementary distribution of the “was” and “were” forms. 
@@ -144,13 +211,12 @@ One of the most marked features of variation in perfect \isi{verb} phrases is no
 
 \begin{table}
 \caption{\label{tab:key:6.2} Sample of 11 verb phrases marked for perfect aspect that permit the preterit forms of strong verbs after the auxiliary “to have”}
-
-\begin{tabularx}{\textwidth}{QQQ}
+\small
+\begin{tabularx}{\textwidth}{Qp{20mm}l}
 \lsptoprule
 
-\textbf{Ship} \textbf{English} \textbf{Citation} 
-
-(with \isi{preterit} form marked for emphasis) & \textbf{Standard} \textbf{Past} \textbf{Participle} & \textbf{Source} \textbf{Document}\\
+\textbf{Ship English citation}\newline 
+(with \isi{preterit} form marked for emphasis) & \textbf{Standard past participle} & \textbf{Source document}\\
 \midrule 
 wee have \textit{rid} her & ridden & ADM 52/2/1\\
 he before had \textit{spoke} through me & spoken & 445f.1/35\\
