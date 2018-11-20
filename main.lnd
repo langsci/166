@@ -1,0 +1,8 @@
+\begin{theindex}
+
+  \item some language, 
+		\hyperindexformat{\see {some other language}}{299}
+  \item \igobble , 
+		\hyperindexformat{\langsciseealso {some other lect also of interest}}{299}
+
+\end{theindex}
