@@ -11,7 +11,47 @@ Ship English makes heavy use of prepositional phrases and one clause might featu
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/delgado-img17.png}
 \caption{\label{fig:key:7.1} Syntactic placement and type of adverbial constituent in 170 examples.\\
-Sources: 1045.f.3, 445f.1, \citet{AdkinsAdkins2008} ADM 106, ADM 51/1, 3954, ADM 52/2, \citet{Brown2011}   CO 5/1411, D/Earle/1/1, DDB6 8/4, HCA 1/9, HCA 1/12, HCA 1/13, HCA 1/14, HCA 1/52, HCA 1/53, HCA 1/98, HCA 1/99, HCA 1/101, Palmer (1986,) SP 42/6, SP 89/34, T/70/1216.}
+  {\tiny Sources: 1045.f.3, 445f.1, \citet{AdkinsAdkins2008} ADM 106, ADM 51/1, 3954, ADM 52/2, \citet{Brown2011}   CO 5/1411, D/Earle/1/1, DDB6 8/4, HCA 1/9, HCA 1/12, HCA 1/13, HCA 1/14, HCA 1/52, HCA 1/53, HCA 1/98, HCA 1/99, HCA 1/101, Palmer (1986,) SP 42/6, SP 89/34, T/70/1216.}
+}
+ 
+\pgfplotstableread{ % data 
+Label		SinglewordAdverb	PrepP	AdvP
+BeforeNPSub	2			7	9
+MidNP		2			0	1
+AfterNP		22			17	13
+MidVP		23			9	7
+AfterVerb	0			3	0	
+AfterVP		11			8	2
+AfterDobj	0			1	0
+AfterCopula	4			1	1
+EndOfClause	10			10	7
+    }\testdata
+
+    \begin{tikzpicture}
+
+    \begin{axis}[
+    ybar stacked,   
+    xmin=0,        
+    xtick=data,     % Use as many tick labels as y coordinates
+    width=14cm,  
+    height=6cm,
+    bar width=0.6cm,
+    enlarge x limits=0.25,
+%     legend style={at={(axis cs:65,0.2)},anchor=south west},
+    xticklabels from table={\testdata}{Label},  % Get the labels from the Label column of the \datatable
+    tick label style={font=\scriptsize},
+    xticklabel style={rotate=20},
+]
+    \addplot [fill=lsDarkBlue]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
+    \addplot [fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [fill=lsNightBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
+            
+%             AfterNPlsMidGreen,MidVP,EndOfClause
+    \legend{SinglewordAdverb,PrepP,AdvP}
+
+    \end{axis}
+    \end{tikzpicture}
+    
 \end{figure}
 
   
@@ -39,26 +79,28 @@ Prepositional phrases that are adverbial in meaning are sometimes difficult to i
 Idiomatic use of prepositions in specific phrases was fluid and highly variable. This is not surprising given that the Early Modern English period was a time in which numerous dialectal differences manifested themselves and there were many new prepositions entering the language owing to the loss of inflection to indicate grammatical relationship (\citealt{MillwardHayes2012}: 268). Limitations of space do not permit a detailed discussion of each \isi{preposition} here, but some examples are illustrated in \tabref{tab:key:7.2} below. 
 
 \begin{table}
-\begin{tabularx}{\textwidth}{lQQ}
+\small
+\begin{tabularx}{\textwidth}{lQl}
 \lsptoprule
-\multicolumn{1}{c}{\textbf{Preposition}} & \textbf{Excerpt} \textbf{Containing} \textbf{Idiom} & \textbf{Source}\\
-\multicolumn{1}{c}{At} & Gust at WSW[West South West] & CO 5/1411/706\\
+{\textbf{Preposition}} & \textbf{Excerpt containing idiom} & \textbf{Source}\\
+\midrule 
+{At} & Gust at WSW[West South West] & CO 5/1411/706\\
 & Piracy at sea is the same with Robbery at land & CO 5/1411/45\\
  & a \isi{longboat} at anchor in Shoar & HCA 1/99/3 Cape Coast {1734}\\
  & he never was at attacking any Ship & HCA 1/99/80 \\
-\multicolumn{1}{c}{By} & and by the way mett wth a ketch\footnotemark{} & HCA 1/12/3\\
+{By} & and by the way mett wth a ketch\footnote{Although the idiom “by the way” appears similar to the way we might express a parenthetical fact in modern English, the usage in this context means a more literal “on route” (i.e., “on the way.”)} & HCA 1/12/3\\
 & missing the Islands by contrary winds & HCA 1/98/267\\
-\multicolumn{1}{c}{For} & was for scuttling the Ship & HCA 1/99/22\\
+{For} & was for scuttling the Ship & HCA 1/99/22\\
 & for till such tyme & ADM 106/288/40\\
  & hee would go for Yarmouth & HCA 1/52/4\\
  & the fleet went for England & ADM 52/1/1\\
  & gave him for answer & SP 89/25/230\\
-\multicolumn{1}{c}{In} & evidences in their behalf & HCA 1/99/69\\
+{In} & evidences in their behalf & HCA 1/99/69\\
 & was concerned in taking away the other things & HCA 1/99 New Providence 1722\\
-\multicolumn{1}{c}{On} & seize on him & SP 89/25/230\\
+{On} & seize on him & SP 89/25/230\\
 & lay hold on the Captain & 445f.1/40\\
  & when on a sudden & HCA 1/99 Barbados {1733}\\
-\multicolumn{1}{c}{To} & wee put to sea\footnotemark{} & HCA 1/12/2 \\
+{To} & wee put to sea\footnote{This use of the idiom “put to sea” is still used in modern Standard English, sometimes with the \isi{preposition} “out” inserted after the \isi{verb} to create the phrase “put out to sea.”} & HCA 1/12/2 \\
 & the wind came to no [north] & DDB6 8/4\\
  & there was no violence used to the master & HCA 1/53/67\\
  & aiding \& assisting to all mastors & SP 42/6\\
@@ -67,10 +109,7 @@ Idiomatic use of prepositions in specific phrases was fluid and highly variable.
 \lspbottomrule
 \end{tabularx}
 \caption{\label{tab:key:7.2} Sample of prepositional variation in idiomatic phrases}
-\end{table}
-\addtocounter{footnote}{-2}
-\stepcounter{footnote}\footnotetext{ Although the idiom “by the way” appears similar to the way we might express a parenthetical fact in modern English, the usage in this context means a more literal “on route” (i.e., “on the way.”)}
-\stepcounter{footnote}\footnotetext{ This use of the idiom “put to sea” is still used in modern Standard English, sometimes with the \isi{preposition} “out” inserted after the \isi{verb} to create the phrase “put out to sea.”}
+\end{table} 
 
 
 Certain combinations with the \isi{preposition} “for” re-occur frequently in the \isi{corpus} but are not necessarily idiomatic. Phrases featuring the combination “for that” can function as complementizers in the same way that the word “that” can when used alone, e.g., “it is untrue, \textit{for that} Scudmore belonged to, and was on Board the \textit{Ranger}” [HCA 1/99/101]. However, other examples suggest that there is a specific meaning attached to the collocation of the two words that act in the same way that the conjunction “because” functions in Modern English, e.g., “he would not do it without the Captains order, \textit{for that} he knew not whether the Captain would allow it” [HCA 1/52/20]. Indeed, this combination appears to mirror the use of the word “for” as a subordinating conjunction when used alone e.g., “[we moored] In 15 fathome, of water \textit{for} it was Calme” [ADM 51/4322/1] and “we kam to Anankor \textit{for} we had the wind att no [north]” [DDB6 8/4]. At other times, the combination of the two words “for” and “that” might have been coincidental, e.g., “if he was \textit{for that} he would defend himselfe” [HCA 1/52/46]. This example can be broken down to mean that the unnamed subject was “for” something, and the something he was “for” is a clause introduced by the subordinator “that,” expressed as “that he would defend himself,” and so the two words “for that,” although they appear to combine in the same way as in the previous examples, are functioning separately. In short, although several examples of the combination “for that” feature in the \isi{corpus}, there is no convincing trend that implies a distinct meaning or an idiom specific to the \isi{speech community} but rather that sailors used the \isi{preposition} “for” as a concordant complementizer or a subordinating conjunction. 
