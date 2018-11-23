@@ -65,9 +65,34 @@ Women were also active in \isi{pirate} communities as evidenced in court records
 
 
 \begin{figure}
-
 \caption{\label{fig:key:3.1}Age at which deposed sailors said they went to sea, adapted from the data presented in \citealt{Earle1998}: 85 Table 6, source: PRO, HCA 13/75-86}
-\includegraphics[width=\textwidth]{figures/delgado-img2.png}
+% % \includegraphics[width=\textwidth]{figures/delgado-img2.png}
+\begin{tikzpicture}
+            \selectcolormodel{gray}
+\begin{axis}[%
+             ymin=0,
+             width=\textwidth,
+             height=6cm,
+             xlabel={Age at going to sea},
+             ylabel={Number of sailors},
+             xtick=data,
+             ytick={0,5,...,30}]
+    \addplot+ [smooth] coordinates {
+        (8,2)
+        (9,2)
+        (10,8)
+        (11,16)
+        (12,24)
+        (13,29)
+        (14,26)
+        (15,30)
+        (16,14)
+        (17,13)
+        (18,13)
+        (19,2)
+    };
+\end{axis}
+\end{tikzpicture}
 \end{figure}
 
 The upper age of sailors, as suggested by the few academics who have worked on this subject and corroborated by depositions in court documentation of the 1620--1750 period, is around fifty years old. At the age of fifty, and particularly if he had been at sea most of his working life, a \isi{sailor} would be considered old.  In his journal, physician Gilbert Blane notes:

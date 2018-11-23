@@ -52,7 +52,25 @@ However, we should not suppose that after a \isi{voyage} of over a year, sailors
 
 \includegraphics[width=\textwidth]{figures/delgado-img9.png}
  
-
+\begin{tikzpicture}
+                        \selectcolormodel{gray}
+\begin{axis}[width=\textwidth,
+             height=6cm,
+             ybar interval,
+             xmin=0,
+             xmax=45,
+             xticklabel=\pgfmathprintnumber\tick--\pgfmathprintnumber\nexttick,
+             ticklabel style={font=\small},
+             xlabel={Months at sea},
+             ylabel={Number of sailors},
+             label style={font=\small}
+             ]
+\addplot+[hist={data min=0,data max=45,bins=9}] table [row sep=\\,y index=0] {
+data\\0.74\\3\\3\\4.5\\5\\5\\5\\5\\6\\6\\6\\6\\6.25\\7\\7.5\\8\\8\\8\\9\\10\\10\\12\\12\\12\\12\\12\\12\\13\\16\\16\\16\\16\\16\\18\\18\\18\\18\\19\\19\\19\\20\\20\\20\\20\\20\\24\\24\\30\\35\\36\\36\\42\\84\\
+};
+\end{axis}
+\end{tikzpicture}
+ 
 \caption{\label{fig:key:4.2} Individual time at sea based on witness depositions, letters and journal\\
 {\tiny Sources: 445f.1/485,486; DDB6 8/4; HCA 1/101/124; HCA 1/13/96; HCA 1/14/17,19; HCA 1/52/20; HCA 1/52/48; HCA 1/9/63; HCA 1/98/252,259,56,57,9; HCA 1/99/102; HCA 1/99/104,105,109,114,116,117,120,121,125,127,128,130,131,132,133,135,140,146,150,155,157,159,162,165,167,170,72,73,80,86,88,89,90,93,94}
 }
@@ -65,7 +83,25 @@ However, we should not suppose that after a \isi{voyage} of over a year, sailors
   
 
 \includegraphics[width=\textwidth]{figures/delgado-img10.png}
- 
+
+\begin{tikzpicture}
+                        \selectcolormodel{gray}
+\begin{axis}[width=\textwidth,
+             height=6cm,
+             ybar interval,
+             xmin=0,
+             xmax=45,
+             xticklabel=\pgfmathprintnumber\tick--\pgfmathprintnumber\nexttick,
+             ticklabel style={font=\small},
+             xlabel={Months at sea},
+             ylabel={Number of logbooks},
+             label style={font=\small}
+             ]
+\addplot+[hist={data min=0,data max=45,bins=9}] table [row sep=\\,y index=0] {
+data\\ % Data missing 
+\\};
+\end{axis}
+\end{tikzpicture}
 
 \caption{\label{fig:key:4.3} Duration of voyages based on ships’ logbooks\\
 {\tiny Sources: ADM 52/1/11; ADM 52/2/1-9; ADM 52/3/1-13; ADM 51/4322/1-6; ADM 51/3983/1-4; ADM 51/3954; ADM 51/3946/1-6; ADM 51/3946/1-13; ADM 51/4170/1-10; ADM 51/3797/1-8; T/70/1215}

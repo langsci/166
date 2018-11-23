@@ -5,7 +5,15 @@
 \usepackage{./langsci/styles/langsci-lgr}
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
-\usepackage{pgfplots,pgfplotstable}
+
+\makeatletter
+\let\pgfmathModX=\pgfmathMod@
+\usepackage{pgfplots}%
+\let\pgfmathMod@=\pgfmathModX
+\makeatother
+
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{statistics}
 
 \pgfplotscreateplotcyclelist{langscicolors}{%
 lsDarkBlue,fill=lsDarkBlue\\%
@@ -22,12 +30,4 @@ lsMidGreen,fill=lsMidGreen\\%
 
 
 \usepackage{xstring}
-
 \usepackage{subfigure}
-
-% \makeatletter
-% \let\pgfmathModX=\pgfmathMod@
-% \usepackage{pgfplots}%
-% \let\pgfmathMod@=\pgfmathModX
-% \makeatother
-
