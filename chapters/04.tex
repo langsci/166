@@ -59,6 +59,8 @@ However, we should not suppose that after a \isi{voyage} of over a year, sailors
              ybar interval,
              xmin=0,
              xmax=45,
+             ymin=0,
+             ymax=20,
              xticklabel=\pgfmathprintnumber\tick--\pgfmathprintnumber\nexttick,
              ticklabel style={font=\small},
              xlabel={Months at sea},
@@ -90,16 +92,17 @@ data\\0.74\\3\\3\\4.5\\5\\5\\5\\5\\6\\6\\6\\6\\6.25\\7\\7.5\\8\\8\\8\\9\\10\\10\
              height=6cm,
              ybar interval,
              xmin=0,
-             xmax=45,
+             xmax=50,
+             ymin=0,
+             ymax=20,
              xticklabel=\pgfmathprintnumber\tick--\pgfmathprintnumber\nexttick,
              ticklabel style={font=\small},
              xlabel={Months at sea},
              ylabel={Number of logbooks},
              label style={font=\small}
              ]
-\addplot+[hist={data min=0,data max=45,bins=9}] table [row sep=\\,y index=0] {
-data\\ % Data missing 
-\\};
+\addplot+[hist={data min=0,data max=50,bins=10}] table [row sep=\\,y index=0] {
+data\\9\\14\\19.45\\9.78\\28.52\\11.29\\22.29\\6.16\\0.52\\20.98\\17.09\\4.42\\5.62\\27.65\\17.03\\18.85\\2.13\\13.81\\17.39\\5.13\\21.03\\3.16\\7.29\\29.91\\25.03\\31.62\\10.09\\32.45\\3.03\\6.81\\1\\19.62\\7.42\\18.91\\48.26\\36.65\\6.81\\12.81\\3.62\\16.29\\29\\25.19\\12.22\\38.06\\12.55\\3.22\\5.09\\4.19\\12.85\\3.59\\18.55\\25.26\\5.03\\23.49\\3.68\\18.78\\10.09\\18.16\\5.39\\4.62\\24\\22.85\\9.55\\22.78\\17.39\\13.68\\18.95\\15\\8.26\\4.09\\9.65\\1.68\\11.09\\3.68\\13.91\\5.72\\18.72\\33.72\\22.45\\6.36\\7.26\\14.55\\11.65\\5.88\\};
 \end{axis}
 \end{tikzpicture}
 
@@ -341,10 +344,42 @@ Shipping, critical to the home-based defensive and trading hubs of England, was 
 
 This period also saw a growth in the range and connectivity among colonial ports, perhaps best illustrated by a summary of the shipping news in \textit{The American: Weekly Mercury} [no. 617--618] covering the period of two weeks from October 21 to November 4 1731, in which 79 percent of the vessels in port were arriving from, or bound to colonial territories compared to twelve percent from/to foreign ports and only five percent heading from/to Great Britain (see \tabref{tab:key:4.3}) Ships such as the \textit{Antelope} were kept in constant transit around the colonies, e.g., logbook entries from 10 June {1690} to August 3 1691 detail consecutive voyages around Montserrat, Nevis, St. Christopher, Santo Domingo, Antigua, \isi{Barbados}, Martinique, Rhode Island, Guadalupe, and Carlisle Bay covering a period just over one year [ADM 52/1/7]. Such voyages were reflective of a phenomenon in which colonies became more autonomous and leveraged the trading commodities, workforce, and defensive capacities that local trading partners could offer before seeking to engage with the customs regulation and high duties that trade and transit with Britain incurred. However, the statistics recovered here are only a partial account of all the traffic that was operating among the colonies. The smaller craft that were critical for day-to-day operations and essential in the inter-colonial networks of trade and communication often bypassed British record-keeping efforts. \citeauthor{Jarvis2010} explains that large ships were much less common compared to the ubiquitous smaller vessels of intercolonial traffic and presents a table of vessels clearing North American ports in 1772 showing only 2,149 large topsail vessels (just under 30\% of the total traffic) compared to 5,047 smaller sloops and schooners (over 70\% of the total traffic) (2010: 122--123, Table 4). 
 
-\begin{figure}
-\caption{\label{tab:key:4.3} Summary of shipping information for New York and Philadelphia covering the period of two weeks (Oct 21-Nov 4) in 1731, based on data in HCA 1/99, \textit{The American: Weekly Mercury} (no. 617--618)}
+\begin{table}\small
+\caption{\label{tab:key:4.3} Summary of shipping information for New York and Philadelphia covering the period of two weeks (Oct 21-Nov 4) in 1731, based on data in HCA 1/99, \textit{The American: Weekly Mercury} (no. 617--618)\todo[inline]{I transposed this table, b/c it wouldnt fit on our paper size}}
 % \includegraphics[width=\textwidth]{figures/delgado-img14.wmf}
-\end{figure}
+\resizebox{\textwidth}{!}{\begin{tabular}{l@{~~}l *{8}{r}}
+\lsptoprule
+ & & \multicolumn{6}{c}{Port\slash Status of vessel}\\
+ & & \multicolumn{3}{c}{New York} & \multicolumn{3}{c}{Philadelphia} & Total & \multirow[b]{-1}{*}{\parbox[t]{\widthof{(per category)}}{\centering Total\newline (per category)}}\\\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+ & & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Clearing\newline customs}} & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Outward\newline bound}} & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Cleared\newline customs}} & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Clearing\newline customs}} & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Outward\newline bound}} & \rotatebox{90}{\parbox[b]{\widthof{Outward~}}{Cleared\newline customs}} &  & \\\midrule
+\multirow[c]{7}{*}{\rotatebox{90}{British Colonies}} & Antigua &  & 2 &  & 1 & 2 &  & 5 & 28 (49\%)\\
+ & Barbados &  & 1 &  & 1 & 1 & 1 & 4 & \\
+ & Bermuda & 1 & 1 & 1 & 1 & 1 & 1 & 6 & \\
+ & Dublin &  &  &  &  & 1 &  & 1 & \\
+ & Gibraltar &  &  &  &  &  & 1 & 1 & \\
+ & Jamaica & 1 & 1 & 1 &  & 2 & 2 & 7 & \\
+ & St. Kitts &  &  & 1 & 1 & 1 & 1 & 4 & \\\midrule\tablevspace
+\multirow[c]{11}{*}{\rotatebox{90}{North American British Colonies}} & Amboy &  & 1 & 1 &  &  &  & 2 & 17 (30\%)\\
+ & Boston & 1 &  & 1 & 1 & 1 &  & 4 & \\
+ & Burlington &  &  &  & 1 &  &  & 1 & \\
+ & Cape Fear &  &  &  &  &  & 1 & 1 & \\
+ & Maryland &  &  &  &  &  & 1 & 1 & \\
+ & N. Carolina & 1 &  &  &  &  &  & 1 & \\
+ & New London &  & 1 &  & 1 &  &  & 2 & \\
+ & Newfoundland &  &  &  & 1 &  &  & 1 & \\
+ & S. Carolina &  &  &  & 1 & 1 &  & 2 & \\
+ & Salem &  &  &  & 1 &  &  & 1 & \\
+ & Virginia &  &  &  & 1 &  &  & 1 & \\\tablevspace\midrule
+\multirow[c]{3}{*}{\rotatebox{90}{Foreign}} & Curaҫao (Neth) & 1 & 1 & 1 &  &  &  & 3 & 7 (12\%)\\
+ & Lisbon (Port) &  & 1 &  &  &  & 1 & 2 & \\
+ & Madera (Port) & 1 &  &  & 1 &  &  & 2 & \\\midrule
+\multirow[c]{3}{*}{\rotatebox{90}{Britian}} & Bristol & 1 &  &  &  &  &  & 1 & 5 (9\%)\\
+ & Great Britain &  & 1 &  &  &  &  & 1 & \\
+ & London & 1 &  & 1 & 1 &  &  & 3 & \\\midrule
+ & Total & 8 & 10 & 7 & 13 & 10 & 9 & 57 & \\
+\lspbottomrule
+\end{tabular}}
+\end{table}
  
 
 He also comments that, even when vessels registered with British authorities, “harried customs officers had neither the time nor the resources to verify information in the registers that mariners presented” (\citealt{Jarvis2010}: 159). Hence, and accepting the difficulties of data collection in a context of covert trade and falsification of customs records, records suggest that colonial ports saw intense maritime activity, much of which was inter-colonial in nature rather than \isi{transatlantic}. 
