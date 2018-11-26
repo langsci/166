@@ -397,6 +397,25 @@ Transatlantic vessels frequently travelled in \isi{convoy} for protection agains
 Sources: SP 42/6, DDB6 8/4, CO 5/1411/664, ADM 52/2/5-8, HCA 51/3983/1, ADM 52/3/7, 13, ADM 51/4322/4, ADM 51/3954, HCA 1/99/26, HCA 1/99/3/6, HCA 1/98/45,47, DDB6 8/4, MMM BL/Egerton 2395/0003, \citealt{Bicheno2012}: 183, \citealt{Gage1648}: 11, 15
 }
 }
+
+\begin{tikzpicture}
+                        \selectcolormodel{gray}
+\begin{axis}[width=\textwidth,
+             height=6cm,
+             ybar interval,
+             xmin=0,
+             xmax=105,
+             ymin=0,
+             ymax=10,
+             xticklabel=\pgfmathprintnumber\tick--\pgfmathprintnumber\nexttick,
+             ticklabel style={font=\small},
+             xlabel={Number of ships in convoy},
+             ylabel={Number of records},
+             label style={font=\small}
+             ]
+\addplot+[hist={data min=0,data max=105,bins=7}] table [row sep=\\,y index=0] {data\\6\\4\\5\\10\\11\\8\\9\\12\\23\\17\\17\\22\\16\\29\\19\\23\\19\\31\\44\\44\\42\\37\\41\\57\\54\\61\\101\\};
+\end{axis}
+\end{tikzpicture}
 \end{figure}
 
 Much larger groupings of ships were possible in port, e.g., “an hundred sail” and “five hundred...fishing boats” [445f.1/511] yet as such references do not necessarily imply that any of the vessels sailed in \isi{convoy}, they are not included in the data composing the graph in \figref{fig:key:4.7} The vessels that evidence indicates did sail in \isi{convoy} with others were potentially made up of mixed groups at sea, both in terms of vessel size and a range of \isi{merchant} and naval vessels e.g., “above 22 sail with 3 \isi{merchant} Ships \& Sloopes” [ADM 52/1/7], “seven ships \& one sloop going after \& 10 long ships" [HCA 1/99/26], and “seven large and 22 small ships” (\citealt{Bicheno2012}: 183). The common maritime practice of sailing in convoys for safety and increased force in the event of attack was also evident among foreign nations, e.g., “16 Saile of french” [DDB6 8/4], and “the Dutch were being about 60 Sayle of men of war” [ADM 52/2/5]; and also in groups composed of international allies, e.g., “the \textit{Assurance} with 12 English Marchant men 2 dutch men of warr \& 30 saile of marchant men” [HCA 51/3983/1]. Just like the naval and \isi{merchant} traditions they grew out of, \isi{pirate} communities also collaborated in \isi{convoy} (\citealt{Esquemelin1678}; \citealt{Rediker1987}: 268) making the feature of this type of collaboration something that characterized all types of \isi{transatlantic} maritime communities during the early \isi{colonial period}. 
