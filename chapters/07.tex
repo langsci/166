@@ -30,6 +30,7 @@ EndOfClause	10			10	7
     }\testdata
 
     \begin{tikzpicture}
+    \tikzset{every pin/.style={font=\tiny,inner sep=0pt}}
     \begin{axis}[
     ybar stacked,   
     xmin=0,  
@@ -47,10 +48,29 @@ EndOfClause	10			10	7
     xticklabel style={rotate=20},
     reverse legend,
 ]
-    \addplot [fill=lsDarkBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
-    \addplot [fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
-    \addplot [fill=lsLightBlue]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
-            
+    \addplot [draw=none,fill=lsDarkBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [draw=none,fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [draw=none,fill=lsLightBlue,nodes near coords,nodes near coords style={font=\tiny}]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
+   \node[coordinate,pin=left:{16}] at (axis cs:0,16) {};
+   \node[coordinate,pin=left:{9}] at (axis cs:0,9) {};
+   
+   \node[coordinate,pin=3:{1}] at (axis cs:1.1,1) {};
+   
+   \node[coordinate,pin=left:{13}] at (axis cs:2,13) {};
+   \node[coordinate,pin=left:{30}] at (axis cs:2,30) {};
+   
+   \node[coordinate,pin=right:{7}] at (axis cs:3,7) {};
+   \node[coordinate,pin=right:{16}] at (axis cs:3,16) {};
+   
+   \node[coordinate,pin=right:{2}] at (axis cs:5,2) {};
+   \node[coordinate,pin=right:{10}] at (axis cs:5,10) {};
+   
+   \node[coordinate,pin=3:{1}] at (axis cs:7.1,1) {};
+   \node[coordinate,pin=left:{2}] at (axis cs:7,2) {};
+   
+   \node[coordinate,pin=right:{7}] at (axis cs:8,7) {};
+   \node[coordinate,pin=right:{17}] at (axis cs:8,17) {};
+
 %             AfterNPlsMidGreen,MidVP,EndOfClause
     \legend{Adverb Phrase,Prepostional Phrase,Single-word Adverb}
 
