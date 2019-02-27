@@ -6,10 +6,12 @@ This is the third linguistic chapter with a focus on the salient characteristics
 
 \subsection{{Adverbs}}%7.1.1
 
-Ship English makes heavy use of prepositional phrases and one clause might feature several adverbial constituents. The two following examples from depositions illustrate heavy use of prepositional phrases with \isi{adverbial function}: “That being at Borligne he was hired by the said Capt Vaughan to serve with him as Master in the barge” [HCA 1/13/95], and “a Prisoner on Board of them Swears, he Several times in that Space addressed to him in French, and with Tears bemoaned his being in Such Company” [HCA 1/99/168]. Many of these prepositional phrases with \isi{adverbial function} occur in the default position of modern standard varieties at the end of the clause, e.g., “and am thies day going with a small vessel for kopon hagen” [HCA 1/101/527] in which the phrases “with a small vessel” and “for kopon hagen” attach to the end of the clause. One word adverbs could also occur at the end of the clause (italicized for emphasis,) e.g., “the tides proved very loe \textit{still}” [ADM 52/2/3], and “they should have Rum \textit{enough}” [HCA 1/99/7]. Adverbial phrases composed of more than one word but not taking a prepositional head also commonly occur at the end of a clause in sailors’ speech, e.g., “several times was threatened \textit{very much}” [HCA 1/99/69] and “John Edwards who came \textit{just then}” [HCA 1/9/51]. However, sailors commonly placed adverbial constituents in a range of positions within the \isi{main clause} whether they were prepositional phrases, single-word adverbs, or adverbial phrases without prepositional heads (see \tabref{tab:key:7.1} and \figref{fig:key:7.1}). 
+Ship English makes heavy use of prepositional phrases and one clause might feature several adverbial constituents. The two following examples from depositions illustrate heavy use of prepositional phrases with \isi{adverbial function}: “That being at Borligne he was hired by the said Capt Vaughan to serve with him as Master in the barge” [HCA 1/13/95], and “a Prisoner on Board of them Swears, he Several times in that Space addressed to him in French, and with Tears bemoaned his being in Such Company” [HCA 1/99/168]. Many of these prepositional phrases with \isi{adverbial function} occur in the default position of modern standard varieties at the end of the clause, e.g., “and am thies day going with a small vessel for kopon hagen” [HCA 1/101/527] in which the phrases “with a small vessel” and “for kopon hagen” attach to the end of the clause. One word adverbs could also occur at the end of the clause (italicized for emphasis,) e.g., “the tides proved very loe \textit{still}” [ADM 52/2/3], and “they should have Rum \textit{enough}” [HCA 1/99/7]. Adverbial phrases composed of more than one word but not taking a prepositional head also commonly occur at the end of a clause in sailors’ speech, e.g., “several times was threatened \textit{very much}” [HCA 1/99/69] and “John Edwards who came \textit{just then}” [HCA 1/9/51]. However, sailors commonly placed adverbial constituents in a range of positions within the \isi{main clause} whether they were prepositional phrases, single-word adverbs, or adverbial phrases without prepositional heads (see
+% \tabref{tab:key:7.1} and 
+\figref{fig:key:7.1}). 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/delgado-img17.png}
+% \includegraphics[width=\textwidth]{figures/delgado-img17.png}
 \caption{\label{fig:key:7.1} Syntactic placement and type of adverbial constituent in 170 examples.\\
   {\tiny Sources: 1045.f.3, 445f.1, \citet{AdkinsAdkins2008} ADM 106, ADM 51/1, 3954, ADM 52/2, \citet{Brown2011}   CO 5/1411, D/Earle/1/1, DDB6 8/4, HCA 1/9, HCA 1/12, HCA 1/13, HCA 1/14, HCA 1/52, HCA 1/53, HCA 1/98, HCA 1/99, HCA 1/101, Palmer (1986,) SP 42/6, SP 89/34, T/70/1216.}
 }
@@ -28,6 +30,7 @@ EndOfClause	10			10	7
     }\testdata
 
     \begin{tikzpicture}
+    \tikzset{every pin/.style={font=\tiny,inner sep=0pt}}
     \begin{axis}[
     ybar stacked,   
     xmin=0,  
@@ -45,10 +48,29 @@ EndOfClause	10			10	7
     xticklabel style={rotate=20},
     reverse legend,
 ]
-    \addplot [fill=lsDarkBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
-    \addplot [fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
-    \addplot [fill=lsLightBlue]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
-            
+    \addplot [draw=none,fill=lsDarkBlue] table [y=AdvP,             meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [draw=none,fill=lsMidBlue]   table [y=PrepP,            meta=Label,x expr=\coordindex] {\testdata};
+    \addplot [draw=none,fill=lsLightBlue,nodes near coords,nodes near coords style={font=\tiny}]  table [y=SinglewordAdverb, meta=Label,x expr=\coordindex] {\testdata};   % "First" column against the data index
+   \node[coordinate,pin=left:{16}] at (axis cs:0,16) {};
+   \node[coordinate,pin=left:{9}] at (axis cs:0,9) {};
+   
+   \node[coordinate,pin=3:{1}] at (axis cs:1.1,1) {};
+   
+   \node[coordinate,pin=left:{13}] at (axis cs:2,13) {};
+   \node[coordinate,pin=left:{30}] at (axis cs:2,30) {};
+   
+   \node[coordinate,pin=right:{7}] at (axis cs:3,7) {};
+   \node[coordinate,pin=right:{16}] at (axis cs:3,16) {};
+   
+   \node[coordinate,pin=right:{2}] at (axis cs:5,2) {};
+   \node[coordinate,pin=right:{10}] at (axis cs:5,10) {};
+   
+   \node[coordinate,pin=3:{1}] at (axis cs:7.1,1) {};
+   \node[coordinate,pin=left:{2}] at (axis cs:7,2) {};
+   
+   \node[coordinate,pin=right:{7}] at (axis cs:8,7) {};
+   \node[coordinate,pin=right:{17}] at (axis cs:8,17) {};
+
 %             AfterNPlsMidGreen,MidVP,EndOfClause
     \legend{Adverb Phrase,Prepostional Phrase,Single-word Adverb}
 
@@ -58,18 +80,23 @@ EndOfClause	10			10	7
 \end{figure}
 
   
-\begin{figure}  
-\includegraphics[width=\textwidth]{figures/delgado-img18.png}
- 
-\includegraphics[width=\textwidth]{figures/delgado-img19.png}
-\caption{\label{tab:key:7.1} Syntactic placement and type of adverbial constituent in 170 examples, raw data.}
-\todo[inline]{figure or table?}
-\end{figure}
+% \begin{figure}  
+% \includegraphics[width=\textwidth]{figures/delgado-img18.png}
+%  
+% \includegraphics[width=\textwidth]{figures/delgado-img19.png}
+% \caption{\label{tab:key:7.1} Syntactic placement and type of adverbial constituent in 170 examples, raw data.}
+% \todo[inline]{figure or table?}
+% \end{figure}
 
 
-The most \isi{common placement} for adverbial constituents was after the noun-phrase subject and before the main \isi{verb phrase}. Prepositional phrases (italicized for emphasis) are regularly placed in this position between the subject and main \isi{verb}, e.g., “which they \textit{in a short time} did” [HCA 1/52/88], and “The ship Hastings \textit{in the chase} fired about five \& twenty Gunns” [HCA 1/52/176]. Although the examples given above are short, sailors also inserted long prepositional phrases in this position between the subject and the \isi{verb}, e.g., “The \isi{Mate} \textit{then coming towards him the said John Humphreys} told him that…” [HCA 1/52/124], and “He \textit{with other who had a potentall Comission to take Spanish goods} did seize on them lately at sea” [HCA 1/9/67]. Single-word adverbs and adverbial phrases also commonly occur in this position between subject and the main \isi{verb}, e.g., “hee \textit{well} know” [HCA 1/52/1], “he \textit{lately} belonged to a Spanish frigate” [HCA 1/99/5], “doctors of physic in ships \textit{many times} are very careless” (cited in \citealt{Brown2011}: 47,) and “Manuel Guzman \textit{the second time of Landing} was chosen the officer in Chief” [HCA 1/99 New Providence 1722]. Overall, this post-nominal and pre-verbal position was the most common location for all adverbial constituents in the sample, composing 52 of the 170 examples or 31\% of the total and was the most \isi{common placement} for both adverbial phrases and prepositional phrases with an \isi{adverbial function} (see \tabref{tab:key:7.1}). 
+The most \isi{common placement} for adverbial constituents was after the noun-phrase subject and before the main \isi{verb phrase}. Prepositional phrases (italicized for emphasis) are regularly placed in this position between the subject and main \isi{verb}, e.g., “which they \textit{in a short time} did” [HCA 1/52/88], and “The ship Hastings \textit{in the chase} fired about five \& twenty Gunns” [HCA 1/52/176]. Although the examples given above are short, sailors also inserted long prepositional phrases in this position between the subject and the \isi{verb}, e.g., “The \isi{Mate} \textit{then coming towards him the said John Humphreys} told him that…” [HCA 1/52/124], and “He \textit{with other who had a potentall Comission to take Spanish goods} did seize on them lately at sea” [HCA 1/9/67]. Single-word adverbs and adverbial phrases also commonly occur in this position between subject and the main \isi{verb}, e.g., “hee \textit{well} know” [HCA 1/52/1], “he \textit{lately} belonged to a Spanish frigate” [HCA 1/99/5], “doctors of physic in ships \textit{many times} are very careless” (cited in \citealt{Brown2011}: 47,) and “Manuel Guzman \textit{the second time of Landing} was chosen the officer in Chief” [HCA 1/99 New Providence 1722]. Overall, this post-nominal and pre-verbal position was the most common location for all adverbial constituents in the sample, composing 52 of the 170 examples or 31\% of the total and was the most \isi{common placement} for both adverbial phrases and prepositional phrases with an \isi{adverbial function} 
+% (see \tabref{tab:key:7.1}). 
+(see \figref{fig:key:7.1}). 
 
-The most \isi{common placement} for single-word adverbs was between an \isi{auxiliary verb} and a verbal \isi{participle}\footnote{\citeauthor{MillwardHayes2012} claim that Early Modern English in general showed a tendency to insert adverbial modifiers between an \isi{auxiliary verb} and a \isi{past participle} (2012: 271-272).}. This occurred with do-support in \isi{indicative modality}, with \isi{perfect aspect}, and with \isi{copula} auxiliaries in both \isi{progressive aspect} and passive constructions, in both indicative and negated statements e.g., “I did \textit{formerly} present to you” [ADM 106/300/21], “The examinant hath not \textit{since} seen him” [HCA 1/14/140], “hee had \textit{long} swam” [HCA 1/53/3], “I am \textit{soone} going to Sea” [HCA 1/101/356], “Which had been \textit{before} taken” [HCA 1/13/95], “Ship that was \textit{lately} cast away” [HCA 1/12/79], and “used to be \textit{often} meditating on the Godly Books” [HCA 1/99/156]. In this position, these single-word adverbs interrupt the verbal phrase, and this effect is more pronounced when the inserted adverbial is either an \isi{adverb} phrase or a \isi{prepositional phrase}, e.g., “Thomas Gardner... did \textit{in June last} take from hence [Deptford] an hoyes Maine saile \& a quantity of Doales” [ADM 106/288/42], “She was \textit{with many of her Slaves} chained” [HCA 1/99/91],  “Juan Boneta Lucrass had \textit{under pretence of that commission} taken Several Sloops” [HCA 1/99/10], and “This informant was \textit{after the sale of the sd ship the Loving Land as aforesaid} put aboard the Gunll of this sd Spanish man of Warr” [HCA 1/53/8]. This interruption is even more pronounced when two or more adverbial interjections are placed in a mid-verbal position, e.g., “Capt Parsons did \textit{in a mornng ab:[about] 9 or ten dayes before Christmas last} call upon this Deponent” [HCA 1/14/54]. In addition to the placement of adverbs between auxiliary verbs and their participles, prepositional adverbs are also permitted to occur after a main \isi{verb} and before an \isi{infinitive} creating a similar effect of interrupting the \isi{verb phrase}, e.g., “he attempted \textit{at Sieraleon} to run away” [HCA 1/99/45], “they were both commanded \textit{in the Boat} to row their Capt on Board”  [HCA 1/99/149], and “you are to be carefull \textit{therefore suly} to observe the sd directions” [CO 5/1411/618]. Although this was not a common feature, it could be seen as an extension of the tendency to place adverbials between auxiliaries and main verbs, which is the most common location for single-word adverbs, and the second most common location for all adverbial constituents in the sample, comprising 39 of the 170 examples or 23\% of the total (see \tabref{tab:key:7.1}).
+
+The most \isi{common placement} for single-word adverbs was between an \isi{auxiliary verb} and a verbal \isi{participle}\footnote{\citeauthor{MillwardHayes2012} claim that Early Modern English in general showed a tendency to insert adverbial modifiers between an \isi{auxiliary verb} and a \isi{past participle} (2012: 271-272).}. This occurred with do-support in \isi{indicative modality}, with \isi{perfect aspect}, and with \isi{copula} auxiliaries in both \isi{progressive aspect} and passive constructions, in both indicative and negated statements e.g., “I did \textit{formerly} present to you” [ADM 106/300/21], “The examinant hath not \textit{since} seen him” [HCA 1/14/140], “hee had \textit{long} swam” [HCA 1/53/3], “I am \textit{soone} going to Sea” [HCA 1/101/356], “Which had been \textit{before} taken” [HCA 1/13/95], “Ship that was \textit{lately} cast away” [HCA 1/12/79], and “used to be \textit{often} meditating on the Godly Books” [HCA 1/99/156]. In this position, these single-word adverbs interrupt the verbal phrase, and this effect is more pronounced when the inserted adverbial is either an \isi{adverb} phrase or a \isi{prepositional phrase}, e.g., “Thomas Gardner... did \textit{in June last} take from hence [Deptford] an hoyes Maine saile \& a quantity of Doales” [ADM 106/288/42], “She was \textit{with many of her Slaves} chained” [HCA 1/99/91],  “Juan Boneta Lucrass had \textit{under pretence of that commission} taken Several Sloops” [HCA 1/99/10], and “This informant was \textit{after the sale of the sd ship the Loving Land as aforesaid} put aboard the Gunll of this sd Spanish man of Warr” [HCA 1/53/8]. This interruption is even more pronounced when two or more adverbial interjections are placed in a mid-verbal position, e.g., “Capt Parsons did \textit{in a mornng ab:[about] 9 or ten dayes before Christmas last} call upon this Deponent” [HCA 1/14/54]. In addition to the placement of adverbs between auxiliary verbs and their participles, prepositional adverbs are also permitted to occur after a main \isi{verb} and before an \isi{infinitive} creating a similar effect of interrupting the \isi{verb phrase}, e.g., “he attempted \textit{at Sieraleon} to run away” [HCA 1/99/45], “they were both commanded \textit{in the Boat} to row their Capt on Board”  [HCA 1/99/149], and “you are to be carefull \textit{therefore suly} to observe the sd directions” [CO 5/1411/618]. Although this was not a common feature, it could be seen as an extension of the tendency to place adverbials between auxiliaries and main verbs, which is the most common location for single-word adverbs, and the second most common location for all adverbial constituents in the sample, comprising 39 of the 170 examples or 23\% of the total
+% (see \tabref{tab:key:7.1}).
+(see \figref{fig:key:7.1}).
 
 Further to the most common two placements of adverbial constituents (after the \isi{subject noun} phrase and between auxiliary and main \isi{verb}) Ship English permits other placements with no apparent \isi{linguistic conditioning} by \isi{adverb} type. Adverbial constituents in the sample often occur after the \isi{verb phrase} but before the \isi{direct object} of a \isi{transitive verb}, e.g., “two of them loosing \textit{each} one leg” [HCA 1/12/2], “and has had \textit{since} no opportunities of escaping” [HCA 1/99/125], “the pyrate gave \textit{to the capt} his \isi{longboat}” [CO 5/1411/42], “took away \textit{out of his packett} his Sealed ring” [HCA 1/9/18], and “there was by his order put \textit{into a boate belinging to the St. Andrew} 2 coyles of rope” [HCA 1/101/224]. Similarly, linking verbs permit adverbs before nominal or adverbial predicates, e.g., “become \textit{again} our enemy [445f.1/21], and “he appeared \textit{allways} disconsolate” [HCA 1/99/129]. The \isi{copula} likewise permits adverbs before adverbial predicates, e.g., “Richard Taylor was \textit{a little before} come” [HCA 1/9/39], “He had been \textit{then} dead about foure howers” [HCA 1/9/51], and “Which ship was \textit{abt four years since} run away with” [HCA 1/52/75]. Although the placement of adverbs after verbs and before direct objects or predicates is not common in the sample of 170 sample phrases analyzed, it does suggest that sailors had the option of placing adverbs after verbs regardless of whether the \isi{verb} in question was \isi{transitive}, linking, or \isi{copula} in nature. In short, sailors had the option of locating adverbs in various positions without apparent \isi{linguistic conditioning} by type of \isi{adverbial constituent} or main \isi{verb} type, resulting in patterns of \isi{free variation} in the \isi{corpus}. 
 
