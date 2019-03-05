@@ -31,6 +31,9 @@ main.snd: main.bbl
 	sed -i 's/.*Organisation.*//' main.adx
 	sed -i 's/.*Embassy.*//' main.adx
 	sed -i 's/.*Commission.*//' main.adx
+	sed -i 's/.*SIL.*//' main.adx
+	sed -i 's/.*Group.*//' main.adx
+	sed -i 's/.MakeCapital//' main.adx
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
