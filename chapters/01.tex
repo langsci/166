@@ -105,30 +105,29 @@ A mixed methods triangulation design was employed in this research, selected to 
 \begin{figure} 
 % \includegraphics[width=\textwidth]{figures/delgado–img1.png}
 \small
-\todo[inline]{Fix tikz}
-% \begin{tikzpicture}
-%  \node[rectangle,draw,text width=2cm] (int)    {Interpretation\newline QUAN+QUAL};
-%  \node[rectangle,draw,text width=1.3cm] (comp)   [left=5mm of int] {Compare\newline and\newline contrast}; 
+\begin{tikzpicture}
+ \node[rectangle,draw,text width=2cm] (int)    {Interpretation\newline QUAN+QUAL};
+ \node[rectangle,draw,text width=1.3cm] (comp)   [left=5mm of int] {Compare\newline and\newline contrast}; 
  
-%  \node[rectangle,draw,text width=1.3cm] (quanre) [left=5mm of comp, yshift=1cm] {QUAN\newline results}; 
-%  \node[rectangle,draw,text width=2cm] (quanda) [left=5mm of quanre] {QUAN\newline Data analysis}; 
-%  \node[rectangle,draw,text width=2.3cm] (quandc) [left=5mm of quanda] {QUAN\newline Data collection}; 
+ \node[rectangle,draw,text width=1.3cm] (quanre) [left=5mm of comp, yshift=1cm] {QUAN\newline results}; 
+ \node[rectangle,draw,text width=2cm] (quanda) [left=5mm of quanre] {QUAN\newline Data analysis}; 
+ \node[rectangle,draw,text width=2.3cm] (quandc) [left=5mm of quanda] {QUAN\newline Data collection}; 
  
-%  \node[rectangle,draw,text width=1.3cm] (qualre) [left=5mm of comp, yshift=–1cm] {QUAL\newline Results}; 
-%  \node[rectangle,draw,text width=2cm] (qualda) [left=5mm of qualre] {QUAL\newline Data analysis}; 
-%  \node[rectangle,draw,text width=2.3cm] (qualdc) [left=5mm of qualda] {QUAL\newline Data collection}; 
+ \node[rectangle,draw,text width=1.3cm] (qualre) [left=5mm of comp, yshift=-1cm] {QUAL\newline Results}; 
+ \node[rectangle,draw,text width=2cm] (qualda) [left=5mm of qualre] {QUAL\newline Data analysis}; 
+ \node[rectangle,draw,text width=2.3cm] (qualdc) [left=5mm of qualda] {QUAL\newline Data collection}; 
  
-%  \draw[–>] (quandc) –– (quanda); 
-%  \draw[–>] (quanda) –– (quanre); 
-%  \draw[–>] (quanre) –– (comp); 
+ \draw[->] (quandc) -- (quanda); 
+ \draw[->] (quanda) -- (quanre); 
+ \draw[->] (quanre) -- (comp); 
  
-%  \draw[–>] (qualdc) –– (qualda); 
-%  \draw[–>] (qualda) –– (qualre); 
-%  \draw[–>] (qualre) –– (comp); 
+ \draw[->] (qualdc) -- (qualda); 
+ \draw[->] (qualda) -- (qualre); 
+ \draw[->] (qualre) -- (comp); 
  
-%  \draw[–>] (comp) –– (int); 
+ \draw[->] (comp) -- (int); 
  
-% \end{tikzpicture}
+\end{tikzpicture}
 
 
 \caption{\label{fig:key:1.1} A mixed methods triangulation research design using the convergence model.
