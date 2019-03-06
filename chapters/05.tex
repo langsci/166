@@ -172,25 +172,7 @@ There is evidence to suggest that the present \isi{participle phrase} headed by 
 
   
 \begin{figure}
-
-\todo[inline]{fix tikz}
-% \begin{tikzpicture}
-%   [
-%       pie chart,
-%       slice type={Adjective}{lsMidBlue},
-%       slice type={Noun}{lsLightGreen},
-%       slice type={Adverb}{lsMidGreen}, 
-%       slice type={Infinitive}{lsLightBlue}, 
-%       pie values/.style={font={\small}},
-%       scale=2
-%   ]
-%   \pie{}{49/Adjective,32/Noun,18/Adverb,1/Infinitive}  
-%   \legend[shift={(2cm,7mm)}]{{Adjective (44)}/Adjective, Noun (29)/Noun,  Adverb (16)/Adverb, Infinitive (1)/Infinitive}
-% \end{tikzpicture}
-
-% \todo[inline]{fix legend} 
-
-\begin{tabular}{lrr}
+\begin{minipage}[c]{.375\textwidth}\begin{tabular}{lrr}
 \lsptoprule
 Predicate & No. & Percent\\
 \midrule 
@@ -201,8 +183,21 @@ Infinitive & 1 & 1\\
 \midrule 
 	& 90 & 100\\
 \lspbottomrule	
-\end{tabular}
-
+\end{tabular}\end{minipage}%
+\begin{minipage}[c]{.625\textwidth}%
+\begin{tikzpicture}
+%   [
+% %       pie chart,
+% %       slice type={Adjective}{lsMidBlue},
+% %       slice type={Noun}{lsLightGreen},
+% %       slice type={Adverb}{lsMidGreen}, 
+% %       slice type={Infinitive}{lsLightBlue}, 
+% %       pie values/.style={font={\small}},
+% %       scale=2
+%   ]
+  \pie[text=pin,radius=2,color={lsMidBlue,lsLightGreen,lsMidGreen,lsLightBlue},/pgf/Minimum Angle=8,]{49/Adjective,32/Noun,18/Adverb,1/Infinitive (1\%)}  
+% % %   \legend[]{{Adjective (44)}/Adjective, Noun (29)/Noun,  Adverb (16)/Adverb, Infinitive (1)/Infinitive}
+\end{tikzpicture}\end{minipage}%
 \caption{\label{fig:key:5.1}: Distribution of predicate types used with a sample of ninety present participle phrases headed by the word \textit{being}\\
 {\tiny Sources: ADM 51/4322, 3797, HCA 1/101, \citealt{Brown2011}, T/70/1216, MMM BL/Egerton 2395, CO 5/1411, HCA 1/52, ADM 52/2, HCA 1/53, T/70/1/10, HCA 1/98, HCA 1/99, 1045.f.3/1, D/Earle/3/1, HCA 1/13, HCA 1/14, DDB6 8/4, HCA 1/9, \& HCA 1/10}
 }

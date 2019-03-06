@@ -20,7 +20,8 @@ Negation can be marked in a variety of ways in Ship English, the most common of 
 
   
 \begin{figure}
-
+\footnotesize
+\begin{minipage}[c]{.28\textwidth}%
 \begin{tabular}{ll}
 \lsptoprule
 Marker & No.\\
@@ -36,23 +37,9 @@ Prefix <un> & 2\\
 \midrule
 & 204\\
 \lspbottomrule
-\end{tabular}
-
-% \pgfplotscreateplotcyclelist{langscicolors}{%
-% lsDarkBlue,fill=lsDarkBlue\\%
-% lsMidBlue,fill=lsMidBlue\\%
-% lsNightBlue,fill=lsNightBlue\\%
-% lsMidDarkBlue,fill=lsMidDarkBlue\\%
-% lsLightBlue,fill=lsLightBlue\\%
-% lsDarkGreenTwo,fill=lsDarkGreenTwo\\%
-% lsRichGreen!60!gray,fill=lsRichGreen\\%
-% lsLightGreen,fill=lsLightGreen\\%
-% lsMidGreen,fill=lsMidGreen\\%
-% }
-
-\todo[inline]{fix tikz} 
-
-% \begin{tikzpicture}
+\end{tabular}\end{minipage}%
+\begin{minipage}[c]{.72\textwidth}%
+\begin{tikzpicture}\footnotesize
 %   [
 %       pie chart,
 %       slice type={Not}{lsDarkBlue},
@@ -65,7 +52,9 @@ Prefix <un> & 2\\
 %       slice type={un}{lsMidGreen},
 %       scale=4
 %   ]
-%   \pie{}{51/Not,
+%   \pie[text=pin,radius=2,color={lsMidBlue,lsLightGreen,lsMidGreen,lsLightBlue},/pgf/Minimum Angle=8,]{49/Adjective,32/Noun,18/Adverb,1/Infinitive (1\%)}  
+
+  \pie[text=pin,radius=3,sum=auto,color={lsDarkBlue,lsMidBlue,lsMidDarkBlue,lsLightBlue,lsDarkGreenTwo,lsRichGreen,lsLightGreen,lsMidGreen},pgf/Minimum Angle=8]{104/Not,42/Never,25/No,17/Nor,8/Nothing,3/Neither (3),3/No one (3),2/Prefix \textit{un-} (2)}
 % 	21/Never,
 % 	12/No,
 % 	8/Nor,
@@ -81,8 +70,7 @@ Prefix <un> & 2\\
 % 			    {Neither (3)}/Neither,
 % 			    {No one (3)}/Noone,
 % 			    {Prefix \textit{un-} (2)}/un}
-% \end{tikzpicture}
- 
+\end{tikzpicture}\end{minipage} 
 \caption{\label{fig:key:6.1}: Distribution of negation markers used in a sample of 204 verb phrases\\
 {\tiny Sources: 1045.f.3/1, 445f.1, AC WO 16–16/8–16, ADM 51/4322, 3983, 3954, ADM 52/1, 2, BL/74/816/m/11/36, CO 5/1411, DDB6 8/4, HCA 1/9, HCA 1/11,12,13,14, HCA 1/52, HCA 1/98, 99, 101, Palmer (1986]. SP 42/6, T/70/1215.}
 }
