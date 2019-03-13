@@ -33,7 +33,44 @@ main.snd: main.bbl
 	sed -i 's/.*Commission.*//' main.adx
 	sed -i 's/.*SIL.*//' main.adx
 	sed -i 's/.*Group.*//' main.adx
-	sed -i 's/.MakeCapital//' main.adx
+	sed -i 's/.MakeCapital//' main.sdx
+	sed -i 's/accusative case/accusative/' main.sdx
+	sed -i 's/adjectival/adjective/' main.sdx
+	sed -i 's/aspectual meaning/aspect/' main.sdx
+	sed -i 's/bare noun/noun/' main.sdx
+	sed -i 's/colonial expansion/colonial period/' main.sdx
+	sed -i 's/creole genesis theory/creole genesis/' main.sdx
+	sed -i 's/completive aspect/aspect!completive/' main.sdx
+	sed -i 's/durative aspect/aspect!durative/' main.sdx
+	sed -i 's/perfect aspect/aspect!perfect/' main.sdx
+	sed -i 's/progressive aspect/aspect!progressive/' main.sdx
+	sed -i 's/expletive/profanity/' main.sdx
+	sed -i 's/finite copula/copula/' main.sdx
+	sed -i 's/genitive case/genitive/' main.sdx
+	sed -i 's/gerund phrase/gerund/' main.sdx
+	sed -i 's/subject noun/grammatical subject/' main.sdx
+	sed -i 's/indicative mood/indicative modality/' main.sdx
+	sed -i 's/late //' main.sdx
+	sed -i 's/long boat/longboat/' main.sdx
+	sed -i 's/maritime language/maritime speech/' main.sdx
+	sed -i 's/main clause/matrix clause/' main.sdx
+	sed -i 's/primary clause/matrix clause/' main.sdx
+	sed -i 's/negation marker/negation/' main.sdx
+	sed -i 's/negative concord/negation/' main.sdx
+	sed -i 's/new dialect formation/new dialect/' main.sdx
+	sed -i 's/noun head/noun phrase/' main.sdx
+	sed -i 's/preterit/past tense/' main.sdx
+	sed -i 's/past tense marking/past tense/' main.sdx
+	sed -i 's/Pidgin/pidgin/' main.sdx
+	sed -i 's/plural form/plural/' main.sdx
+	sed -i 's/reflexive pronoun/pronoun/' main.sdx
+	sed -i 's/realis marker/realis/' main.sdx
+	sed -i 's/seamen/seaman/' main.sdx
+	sed -i 's/tense marking/tense/' main.sdx
+	sed -i 's/third person singular/third person/' main.sdx
+	sed -i 's/singular third person/third person/' main.sdx
+	sed -i 's/transitive verb/transitive/' main.sdx
+	sed -i 's/creole/Creole/' main.sdx
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
